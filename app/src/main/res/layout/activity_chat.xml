@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical"
+    tools:context=".ChatActivity">
+
+    <!--Tab Layout-->
+
+    <!--view pager to hold fragments-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/chattab"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/green"
+        android:elevation="5sp"
+        app:tabIndicator="@color/white"
+        app:tabIndicatorHeight="2sp"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHAT" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STORIES" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager2.widget.ViewPager2>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:background="#065e55">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/usericon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="133dp"
+                android:src="@drawable/user2" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addusericon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/camera3" />
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="165dp"
+                android:gravity="center"
+                android:text="Priya "
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:hint="Change your about.."
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:id="@+id/userabout"></EditText>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_create_24"></ImageView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="UPDATE NOW"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profile_border"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="priya"
+                android:textSize="18dp"
+                android:id="@+id/txtname"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/info"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Hey there! "
+                android:textSize="18dp"
+                android:id="@+id/txtabout"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/ic_baseline_email_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="priya@gmail.com"
+                android:textSize="18dp"
+                android:id="@+id/txtemail"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

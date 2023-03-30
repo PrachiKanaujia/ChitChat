@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="3sp"
+    android:layout_margin="1sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/default_user_icon"
+        android:padding="5sp"
+        app:civ_border_width="2sp"
+        app:civ_border_color="@color/teal_200"
+        android:id="@+id/userprofilepic">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priyanshi"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="cursive"
+            android:paddingLeft="10sp"
+            android:id="@+id/username"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hii!! What are you doing..?"
+            android:textSize="20sp"
+            android:textColor="#6e6e6e"
+            android:fontFamily="cursive"
+            android:paddingLeft="10sp"
+            android:id="@+id/userlastmsg"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

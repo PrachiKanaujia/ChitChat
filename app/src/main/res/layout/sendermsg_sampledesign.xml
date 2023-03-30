@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="right"
+    android:background="@drawable/sendermsg_bg"
+    android:padding="10sp"
+    android:maxWidth="300sp"
+    android:minWidth="100sp"
+    android:maxHeight="400sp"
+    android:minHeight="60sp"
+    android:layout_margin="4sp"
+    android:layout_alignParentRight="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, how are you doing"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:id="@+id/sendermsg"
+        android:inputType="textMultiLine"
+        android:maxWidth="280sp"
+        android:maxHeight="300sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendermsgtime"
+        android:gravity="right"
+        android:text="12:30am"></TextView>
+
+</LinearLayout>
+
+</RelativeLayout>
